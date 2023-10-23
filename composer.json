@@ -1,0 +1,27 @@
+{
+    "name": "fabank/ecdsa",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "fast openSSL-compatible implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA)",
+    "homepage": "https://github.com/fabankbr/ecdsa-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabank",
+            "email": "infra@fabank.com.br",
+            "homepage": "https://fabank.com.br",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+        "ext-gmp": "*"
+    },
+    "autoload": {
+        "files": ["src/ellipticcurve.php"],
+        "classmap": ["src/"],
+        "psr-4": {
+            "EllipticCurve\\": "src/"
+        }
+    }
+}
